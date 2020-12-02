@@ -1,0 +1,9 @@
+docker-game
+===========
+
+Ok, you are inside the container.
+But, sometimes it could be helpful to inspect data outside the container.
+
+Level 4
+
+Let's run this container again but mount the /data folder on your host machine.
