@@ -18,7 +18,7 @@ docker-game
 
 Level 9
 
-It's time to take a look to the logs. But will you be able to take all theses lines? Tips: check in the last 1000 lines for this container: docker run slecache/docker-game:flood
+Have you ever tried starting again an existing container? Some of them have memories, like this one: docker run slecache/docker-game:memories
 
 EOM
     exit 0
