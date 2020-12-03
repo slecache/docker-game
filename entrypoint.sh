@@ -21,6 +21,7 @@ Well you:
 - overrided default ENTRYPOINT
 - inspected an image
 - exposed container port on host machine with "-p" option
+- restarted an existing container with "docker start -a"
 - scanned container's log
 
 Docker is extremely important tool to learn and use, 
@@ -33,4 +34,4 @@ PS: Maybe an advanced mode or easter eggs will arrive. ;-)
 
 EOM
 
-for i in `seq 1 972`; do echo "docker docker docker docker docker docker docker docker docker docker"; done
+for i in `seq 1 971`; do echo "docker docker docker docker docker docker docker docker docker docker"; done
