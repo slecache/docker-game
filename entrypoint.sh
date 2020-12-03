@@ -61,6 +61,29 @@ When you encounter bug, you might need to inspect the contents of a container.
 
 Level 3
 
-You should take a look at this /bug.txt file.
+You should take a look at this /bug.txt file (by entering in the container).
+
 EOM
+
+sleep 3s
+
+cat << EOM > /bug.txt
+docker-game
+===========
+
+Ok, you are inside the container.
+But, sometimes it could be helpful to inspect data outside the container.
+
+Level 4
+
+Let's run this container again but mount the /data folder on your host machine.
+
+EOM
+
+echo "You have 5 minutes left before I die..."
+sleep 4m
+echo "1 minute, hurry up!"
+sleep 1m
+echo "Bye-Bye!"
+
 fi

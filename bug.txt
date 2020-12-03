@@ -1,9 +1,10 @@
 docker-game
 ===========
 
-Ok, you are inside the container.
-But, sometimes it could be helpful to inspect data outside the container.
+Nice try! But...
 
-Level 4
+Level 3
 
-Let's run this container again but mount the /data folder on your host machine.
+We said that you must enter in the container. Not override the default CMD.
+
+You should consider to run a sh in this running container: https://docs.docker.com/engine/reference/commandline/exec/
