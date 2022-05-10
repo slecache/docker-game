@@ -1,12 +1,28 @@
 #!/bin/sh
+MEM_IN_MB=$(cat /sys/fs/cgroup//memory/memory.stat | grep hierarchical_memory_limit | awk '{ print $2/1024/1024}')
+RESULT=$(expr $MEM_IN_MB - 100)
+if [[ $RESULT == -* ]] || [[ $RESULT == 0 ]]
+then
 cat << EOM
 docker-game
 ===========
 
-Level 1
+Level 12
 
-Your first task is to run the container whose docker image tag is the answer to this question:
+Well done! What could be your next task?
 
-> Which animal is represented on the Docker logo?
+To be continued...
 
 EOM
+
+else
+cat << EOM
+docker-game
+===========
+
+Level 11
+
+Let's enter in the advanced levels. Your first task is to enforce the hard memory limits of this container to 100MB.
+
+EOM
+fi
