@@ -3,10 +3,6 @@ cat << EOM
 docker-game
 ===========
 
-Level 1
-
-Your first task is to run the container whose docker image tag is the answer to this question:
-
-> Which animal is represented on the Docker logo?
+Nice try but can you really believe that it would have been that easy?
 
 EOM
